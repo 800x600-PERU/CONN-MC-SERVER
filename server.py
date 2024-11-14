@@ -1,4 +1,4 @@
-# Versiones disponibles
+2# Versiones disponibles
 # forge, mohist, fabric, vanilla, paper
 
 # Puedes instalar mohist después de instalar forge desde el menú de gestionar
@@ -41,6 +41,7 @@ if not os.path.exists("./.gitignore"):
 		giti.write(dec)
 def download_latest_release(download_path='.'):
 	mirror = "https://elyxdev.github.io/latest"
+	
 	pet = requests.get(mirror)
 	if pet.status_code == 200:
 		data = pet.json()
